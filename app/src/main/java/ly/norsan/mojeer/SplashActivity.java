@@ -21,7 +21,7 @@ import com.onesignal.OneSignal;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final String ONESIGNAL_APP_ID = "9a5b658c-0182-432d-931e-4fb2a8b2e03a";
+    private static final String ONESIGNAL_APP_ID = "dac50fbe-1a61-4896-b53a-94b659cda396";
     boolean checkGpsOnResume = false;
     private ProgressBar progressBar;
     String user_id = "";
@@ -98,7 +98,7 @@ public class SplashActivity extends AppCompatActivity {
                 if (user_id == null) {
                     countDownTimer();
                 } else {
-                        urlString = "https://norsan.zmzm.x10.ltd/mobile.php?device-id=" + user_id + "&os=android";
+                        urlString = "https://norsan.x10.ltd/mobile.php?device-id=" + user_id + "&os=android";
                         Log.d(TAG, "Targer Url: " + urlString);
                         //Toast.makeText(SplashActivity.this, "Targer Url: " + urlString, Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(SplashActivity.this, MainActivity.class));
